@@ -5,3 +5,5 @@ services:
     command: ./main -upload_limit 524288000 -token f9403fc5f537b4ab332de /app/tmp
     volumes:
       - /home/ubuntu/tmp:/app/tmp
+    ports:
+    - "25478:25478"
