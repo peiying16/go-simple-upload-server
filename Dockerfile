@@ -6,7 +6,7 @@ COPY . .
 RUN go build .
 RUN ls
 
-FROM alpine:3.5 AS runtime-env
+FROM ubuntu:18.04 AS runtime-env
 RUN mkdir /app
 WORKDIR /app
 RUN mkdir /app/tmp
